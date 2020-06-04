@@ -24,6 +24,7 @@ flutter:
 
   assets:
     - images/janice.jpeg
+    - images/main.png
 
   fonts:
   - family: FredokaOne

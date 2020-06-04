@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MyApp()
+      MyApp()
+
   );
 }
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('images/janice.jpeg'),
+                backgroundImage: AssetImage('images/main.png'),
               ),
               Text(
                 'Janice',
@@ -39,51 +40,50 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+
               SizedBox(
-                height: 30.0,
+                height: 20.0,
+                width: 200.0,
                 child: Divider(
-                color: Colors.teal.shade100,
+                  color: Colors.teal.shade100,
                 ),
               ),
+
               Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                child: Padding(
-                    padding: EdgeInsets.all(1.0),
-                    child: ListTile(
-                        leading: Icon(
-                          Icons.phone,
-                          color: Colors.teal,
-                        ),
-                        title: Text('  0931-990604',
-                          style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                          ),)
-                      ,)
-                    )
-                ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(1.0),
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
                   child: ListTile(
                     leading: Icon(
-                      Icons.email,
+                      Icons.phone,
                       color: Colors.teal,
                     ),
-                    title: Text('  t106300302@ntut.org.tw',
+                    title: Text(
+                      '0123-456789',
                       style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0
-                        ,)
-                      ,)
+                          fontSize: 20.0,
+                          color: Colors.teal.shade900,
+                          fontFamily: 'Source Sans Pro'
+                      ),
+                    ),
                   )
-                ),
               ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'abc@gmail.com',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'
+                    ),
+                  ),
+                ))
             ],
           ),
         ),
